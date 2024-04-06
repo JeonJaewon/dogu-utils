@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["../src/Hello.tsx"],"sourcesContent":["import React from \"react\";\nimport ReactDOM from \"react-dom\";\n\nexport const Hello = () => {\n  return <div>Hello World!</div>;\n};\n"],"names":["Hello","React"],"mappings":";;IAGaA,KAAK,GAAG,SAARA,KAAKA,GAAG;EACnB,oBAAOC,gDAAuB,CAAA;AAChC;;;;"}
