@@ -1,5 +1,5 @@
 {
-  "name": "dogu-utils",
+  "name": "@dogu-utils/monorepo",
   "version": "0.0.1",
   "description": "A utility library for TypeScript, JavaScript",
   "type": "module",
@@ -7,8 +7,8 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "watch": "rollup -cw"
+    "build": "pnpm -F dogu-utils build",
+    "docs:start": "pnpm -F dogu-utils-docs start"
   },
   "keywords": [],
   "author": "Jeon Jaewon <wksk3249@gmail.com>",
