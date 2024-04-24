@@ -1,12 +1,12 @@
-import babel from "@rollup/plugin-babel";
-import typescript from "@rollup/plugin-typescript";
+import babel from "@rollup/plugin-babel"
+import typescript from "@rollup/plugin-typescript"
 
 export default {
   input: "./src/index.ts",
   output: {
     file: "./dist/index.js",
     format: "es",
-    sourcemap: true,
+    sourcemap: true
   },
   plugins: [
     babel({
@@ -14,10 +14,10 @@ export default {
       presets: [
         "@babel/preset-env",
         "@babel/preset-react",
-        "@babel/preset-typescript",
+        "@babel/preset-typescript"
       ],
-      extensions: [".js", ".jsx", ".ts", ".tsx"],
+      extensions: [".js", ".jsx", ".ts", ".tsx"]
     }),
-    typescript(),
-  ],
-};
+    typescript()
+  ]
+}
