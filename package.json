@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "pnpm -F dogu-utils build",
-    "docs": "pnpm -F dogu-utils-docs start"
+    "docs:start": "pnpm -F dogu-utils-docs start"
   },
   "keywords": [],
   "author": "Jeon Jaewon <wksk3249@gmail.com>",
