@@ -18,15 +18,20 @@ function useOpenCloseState(initialState?: boolean): {
 Here's a basic usage example:
 
 ```tsx
-import { useOpenCloseState } from "dogu-utils/react/hooks"
+import { useOpenCloseState } from "dogu-utils"
 
 function ExampleComponent() {
-  const { isOpen, open, close, toggle } = useOpenCloseState()
+  const { isOpen, open, close } = useOpenCloseState()
 
   return (
     <div>
-      <button onClick={toggle}>Toggle</button>
-      {isOpen && <div>This is an open state</div>}
+      <button onClick={open}>Open</button>
+      <button onClick={close}>Close</button>
+      {isOpen ? (
+        <div>This is an open state</div>
+      ) : (
+        <div>This is a closed state</div>
+      )}
     </div>
   )
 }
