@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types"
 import type * as Preset from "@docusaurus/preset-classic"
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "dogu-utils",
+  // tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -16,7 +16,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "dogu-utils", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -47,13 +47,13 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    // image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
-      logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg"
-      },
+      title: "dogu-utils",
+      // logo: {
+      //   alt: "My Site Logo",
+      //   src: "img/logo.svg"
+      // },
       items: [
         {
           type: "docSidebar",
@@ -71,47 +71,47 @@ const config: Config = {
     footer: {
       style: "dark",
       links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro"
-            }
-          ]
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus"
-            }
-          ]
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog"
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+        // // {
+        // //   title: "Docs",
+        // //   items: [
+        // //     {
+        // //       label: "Tutorial",
+        // //       to: "/docs/intro"
+        // //     }
+        // //   ]
+        // // },
+        // // {
+        // //   title: "Community",
+        // //   items: [
+        // //     {
+        // //       label: "Stack Overflow",
+        // //       href: "https://stackoverflow.com/questions/tagged/docusaurus"
+        // //     },
+        // //     {
+        // //       label: "Discord",
+        // //       href: "https://discordapp.com/invite/docusaurus"
+        // //     },
+        // //     {
+        // //       label: "Twitter",
+        // //       href: "https://twitter.com/docusaurus"
+        // //     }
+        // //   ]
+        // // },
+        // {
+        //   title: "More",
+        //   items: [
+        //     {
+        //       label: "Blog",
+        //       to: "/blog"
+        //     },
+        //     {
+        //       label: "GitHub",
+        //       href: "https://github.com/facebook/docusaurus"
+        //     }
+        //   ]
+        // }
+      ]
+      // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
     },
     prism: {
       theme: prismThemes.github,
