@@ -1,9 +1,11 @@
 {
   "name": "dogu-utils",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "publish": "npm publish --access=public",
     "build": "rollup -c",
     "watch": "rollup -cw",
     "test": "vitest"
