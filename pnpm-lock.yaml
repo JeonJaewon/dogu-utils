@@ -25,7 +25,7 @@ importers:
         version: 6.0.4(@babel/core@7.24.4)
       '@rollup/plugin-typescript':
         specifier: ^11.1.6
-        version: 11.1.6(tslib@2.6.2)(typescript@5.4.5)
+        version: 11.1.6(tslib@2.6.2)(typescript@5.6.3)
       eslint:
         specifier: ^9.0.0
         version: 9.1.1
@@ -36,8 +36,8 @@ importers:
         specifier: ^2.6.2
         version: 2.6.2
       typescript:
-        specifier: ^5.4.4
-        version: 5.4.5
+        specifier: 5.6.3
+        version: 5.6.3
 
   docs:
     dependencies:
@@ -99,7 +99,7 @@ importers:
         version: 6.0.4(@babel/core@7.24.4)
       '@rollup/plugin-typescript':
         specifier: ^11.1.6
-        version: 11.1.6(tslib@2.6.2)(typescript@5.4.5)
+        version: 11.1.6(tslib@2.6.2)(typescript@5.6.3)
       '@types/react':
         specifier: ^18.2.74
         version: 18.2.79
@@ -4473,8 +4473,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6470,11 +6470,11 @@ snapshots:
       '@babel/helper-module-imports': 7.24.3
       '@rollup/pluginutils': 5.1.0
 
-  '@rollup/plugin-typescript@11.1.6(tslib@2.6.2)(typescript@5.4.5)':
+  '@rollup/plugin-typescript@11.1.6(tslib@2.6.2)(typescript@5.6.3)':
     dependencies:
       '@rollup/pluginutils': 5.1.0
       resolve: 1.22.8
-      typescript: 5.4.5
+      typescript: 5.6.3
     optionalDependencies:
       tslib: 2.6.2
 
@@ -10365,7 +10365,7 @@ snapshots:
 
   typescript@5.2.2: {}
 
-  typescript@5.4.5: {}
+  typescript@5.6.3: {}
 
   undici-types@5.26.5: {}
 
