@@ -23,7 +23,7 @@ export class EarlyReturn<T> {
     return func()
   }
 
-  isAlreadyReturned<T>(returnValue: T | undefined) {
+  private isAlreadyReturned<T>(returnValue: T | undefined) {
     return returnValue !== undefined
   }
 }
