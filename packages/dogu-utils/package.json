@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -cw"
+    "watch": "rollup -cw",
+    "test": "vitest"
   },
   "devDependencies": {
     "@babel/core": "^7.24.4",
@@ -15,7 +16,8 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.74",
-    "@types/react-dom": "^18.2.24"
+    "@types/react-dom": "^18.2.24",
+    "vitest": "^2.1.5"
   },
   "peerDependencies": {
     "react": "^18.2.0"
