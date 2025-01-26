@@ -18,6 +18,10 @@ export default {
       ],
       extensions: [".js", ".jsx", ".ts", ".tsx"]
     }),
-    typescript()
+    typescript({
+      declaration: true,
+      declarationDir: "./dist",
+      rootDir: "./src"
+    })
   ]
 }

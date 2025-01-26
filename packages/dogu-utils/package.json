@@ -5,6 +5,11 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./react": "./dist/react/index.js",
+    "./utils": "./dist/utils/index.js"
+  },
   "types": "./dist/index.d.ts",
   "type": "module",
   "scripts": {
