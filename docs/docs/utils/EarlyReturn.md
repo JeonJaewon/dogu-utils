@@ -1,6 +1,20 @@
 # EarlyReturn
 
-The `EarlyReturn` class is a utility designed to handle conditional early returns in a clean and readable manner. It allows you to specify a series of conditions and corresponding actions, and it will execute the first action whose condition is met. If no conditions are met, a default action can be specified.
+The `EarlyReturn` class is a utility designed to handle conditional early returns in a predictable manner.
+It is inspired by the functional programming paradigm, allowing you to handle conditional statements to return values.
+
+### Example
+
+```typescript
+const result = new EarlyReturn<string>()
+  .case(false, () => "First case")
+  .case(true, () => "Second case")
+  .default(() => "Default case")
+
+console.log(result) // Output: 'Second case'
+```
+
+In this example, the `EarlyReturn` instance checks the first condition, which is `false`, so it moves to the next condition. The second condition is `true`, so it executes the corresponding callback and sets the return value to `'Second case'`. The `default` callback is not executed because a return value has already been set.
 
 ### Methods
 
@@ -32,16 +46,3 @@ This method executes the provided callback function if no previous conditions we
 - **Returns:** The return value from the executed callback function.
 
 ---
-
-### Example
-
-```typescript
-const result = new EarlyReturn<string>()
-  .case(false, () => "First case")
-  .case(true, () => "Second case")
-  .default(() => "Default case")
-
-console.log(result) // Output: 'Second case'
-```
-
-In this example, the `EarlyReturn` instance checks the first condition, which is `false`, so it moves to the next condition. The second condition is `true`, so it executes the corresponding callback and sets the return value to `'Second case'`. The `default` callback is not executed because a return value has already been set.
